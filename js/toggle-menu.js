@@ -13,10 +13,3 @@ close.addEventListener("click", () => {
 });
 
 // toggle lang
-
-let itemOpenLang = document.querySelector(".item-open-lang");
-let menuLang = document.querySelector(".menu-lang");
-
-itemOpenLang.addEventListener("click", () => {
-  menuLang.classList.toggle("open-lang");
-});

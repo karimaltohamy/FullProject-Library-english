@@ -914,6 +914,7 @@ $blue-color: #284AC2;
     }
 
     .type-chat {
+        padding-bottom: 40px !important;
         .head {
             .person {
                 img {
@@ -986,4 +987,8 @@ $blue-color: #284AC2;
 
 .open-chat {
     display: block !important;
+}
+
+.top {
+    margin-bottom: 20px;
 }

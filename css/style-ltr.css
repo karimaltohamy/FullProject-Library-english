@@ -5705,6 +5705,9 @@ hr {
     height: 18px !important;
     font-size: 12px !important;
   }
+  .type-chat {
+    padding-bottom: 40px !important;
+  }
   .type-chat .head .person img {
     width: 50px !important;
   }
@@ -5755,6 +5758,10 @@ hr {
 
 .open-chat {
   display: block !important;
+}
+
+.top {
+  margin-bottom: 20px;
 }
 
 /* Start Head Page */
