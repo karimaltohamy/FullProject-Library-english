@@ -5706,7 +5706,7 @@ hr {
     font-size: 12px !important;
   }
   .type-chat {
-    padding-bottom: 40px !important;
+    padding-bottom: 50px !important;
   }
   .type-chat .head .person img {
     width: 50px !important;
@@ -5724,7 +5724,7 @@ hr {
     width: 19px;
   }
   .type-chat .chat-content {
-    height: 360px !important;
+    height: 400px !important;
   }
   .type-chat .chat-content div {
     margin-bottom: 5px !important;
