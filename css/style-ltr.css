@@ -5395,6 +5395,8 @@ hr {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-bottom: 10px;
+  position: relative;
 }
 .content-chats .type-chat .chat-content .right p {
   background-color: #D1DAF9;
@@ -5405,13 +5407,31 @@ hr {
   padding: 10px;
   border-radius: 15px 15px 0 15px;
 }
+.content-chats .type-chat .chat-content .right .date {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.content-chats .type-chat .chat-content .right .date span {
+  font-size: 13px;
+  color: gray;
+}
 .content-chats .type-chat .chat-content .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 10px;
 }
 .content-chats .type-chat .chat-content .left p {
   background-color: #284AC2;
@@ -5421,6 +5441,26 @@ hr {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.content-chats .type-chat .chat-content .left .date {
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 8px;
+}
+.content-chats .type-chat .chat-content .left .date span {
+  font-size: 13px;
+  color: gray;
 }
 .content-chats .type-chat .input-chat {
   display: -webkit-box;
@@ -5643,27 +5683,70 @@ hr {
   .class-app .search input {
     padding: 5px 12px !important;
   }
-  .all-chats .chats-friends .box-chat {
+  .all-chats .box-chat {
     margin-bottom: -1px !important;
     border-radius: 11px !important;
   }
-  .all-chats .chats-friends .box-chat .info .name-user-chat h3 {
+  .all-chats .box-chat .info .name-user-chat h3 {
     font-size: 14px !important;
     font-weight: 600;
   }
-  .all-chats .chats-friends .box-chat .info .name-user-chat p {
+  .all-chats .box-chat .info .name-user-chat p {
     font-size: 13px !important;
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
   }
-  .all-chats .chats-friends .box-chat .info .notification .time {
+  .all-chats .box-chat .info .notification .time {
     font-size: 11px !important;
     color: #A9A9B0;
   }
-  .all-chats .chats-friends .box-chat .info .notification .not {
+  .all-chats .box-chat .info .notification .not {
     width: 18px !important;
     height: 18px !important;
     font-size: 12px !important;
+  }
+  .type-chat .head .person img {
+    width: 50px !important;
+  }
+  .type-chat .head .person p {
+    font-size: 15px !important;
+  }
+  .type-chat .head .person span {
+    font-size: 14px !important;
+    -webkit-transform: translateY(-5px) !important;
+            transform: translateY(-5px) !important;
+    display: block;
+  }
+  .type-chat .head .back svg {
+    width: 19px;
+  }
+  .type-chat .chat-content {
+    min-height: 430px !important;
+  }
+  .type-chat .chat-content div {
+    margin-bottom: 5px !important;
+  }
+  .type-chat .chat-content div p {
+    padding: 4px 10px !important;
+    font-size: 13px !important;
+  }
+  .type-chat .chat-content div .date {
+    bottom: -15px !important;
+  }
+  .type-chat .chat-content div .date span {
+    font-size: 10px !important;
+  }
+  .type-chat .input-chat {
+    padding: 20px 15px !important;
+  }
+  .type-chat .input-chat .input input {
+    padding: 20px 15px !important;
+  }
+  .type-chat .input-chat .input img {
+    width: 22px;
+  }
+  .type-chat .input-chat .input-search img {
+    width: 34px !important;
   }
 }
 .close-chat {
@@ -6293,7 +6376,7 @@ hr {
   }
   .container .account .form-account .box-input .icon-input {
     width: 15px !important;
-    left: 7px !important;
+    left: 7px;
   }
   .container .account .form-account label[for=file-input] {
     padding: 2px 9px !important;
@@ -6624,10 +6707,15 @@ hr {
 /* End Page Authors */
 .account .box-input svg {
   left: auto !important;
-  right: 5px;
+  right: 5px !important;
 }
 
 .head-app a {
   left: auto !important;
   right: 15px;
+}
+.head-app p {
+  padding-right: 40px;
+  margin-top: -3px !important;
+  font-size: 12px !important;
 }

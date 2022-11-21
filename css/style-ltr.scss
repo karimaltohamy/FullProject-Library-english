@@ -426,7 +426,7 @@
     .box-input {
         svg {
             left: auto !important;
-            right: 5px;
+            right: 5px !important;
         }
     }
 }
@@ -438,6 +438,12 @@
     a {
         left: auto !important;
         right: 15px;
+    }
+
+    p {
+        padding-right: 40px;
+        margin-top: -3px !important;
+        font-size: 12px !important;
     }
 }
 // head-app pages upload
