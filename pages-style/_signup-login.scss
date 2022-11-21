@@ -1,0 +1,225 @@
+$bg-color: #FFF;
+$text-color: #000;
+$blue-color: #284AC2;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-account {
+    display: none;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .account {
+        width: 100%;
+        .title-account {
+            text-align: center;
+            font-size: 25px !important;
+            color: $blue-color;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        
+        .form-account {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            background-color: $blue-color;
+            color: rgb(255, 255, 255);
+            max-width: 550px;
+            width: 90%;
+            border-radius: 5px;
+            margin: auto;
+            padding: 30px;
+
+            .logo-form {
+                margin: auto;
+                width: 110px;
+                height: 110px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 100px;
+                    color: $blue-color;
+                }
+            }
+
+            .box-input {
+                position: relative;
+                .input-form {
+                    border-radius: 5px;
+                    margin: 15px 0px;
+                    outline: none;
+                    padding: 8px 10px;
+                    width: 100%;
+                    border: 0;
+                    outline: 0;
+                    font-size: 17px;
+                    color: #919191;
+                }
+
+                .icon-input {
+                    position: absolute;
+                    width: 20px;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #919191;
+
+                }
+            }
+
+           
+                
+            #file-input {
+                display: none;
+            }
+                
+            label[for="file-input"] {
+                padding: 3px 15px;
+                width: fit-content;
+                text-align: center;
+                font-size: 13px;
+                font-weight: 600;
+                color: $blue-color;
+                background-color: white;
+                box-shadow: 1px 0 10px rgba(0,0,0,.15);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            .image-preview {
+                margin: 0 0 1rem;
+                min-height: 250px;
+                flex: 1 0 75%;
+                background-color: #c1c1c1;
+            }
+
+            .container-btn {
+                margin: 30px auto 20px;
+
+                .btn-form {
+                    padding: 12px 41px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $blue-color;
+                    border-radius: 5px;
+                    border: 0;
+                }
+            }
+
+            .text-form {
+                text-align: center;
+
+                .to-login {
+                    color: #919191;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .form-account {
+        max-width: 450px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-account {
+        max-width: 400px !important;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .head-account {
+        background-color: $blue-color;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-account {
+            width: 100px;
+        }
+    }
+
+    .container {
+        height: calc(100ch - 655px);
+        display: block;
+        margin-top: 80px;
+        .account {
+            .title-account {
+                font-size: 16px !important;
+            }
+    
+            .form-account {
+                padding: 15px !important;
+    
+                .logo-form {
+                    width: 70px !important;
+                    height: 70px !important;
+    
+                    svg {
+                        width: 60px !important;
+                    }
+                }
+    
+                .box-input {
+                    .input-form {    
+                        margin: 8px 0px !important;
+                        padding: 6px 10px !important;
+                        font-size: 14px !important;
+                    }
+    
+                    .icon-input {
+                        width: 15px !important;
+                        left: 7px !important;
+                    }
+                }
+    
+                label[for=file-input] {
+                    padding: 2px 9px !important;
+                    font-size: 12px !important;
+                }
+    
+                .container-btn {
+                    margin: 20px auto 10px !important;
+    
+                    .btn-form {
+                        padding: 10px 20px !important;
+                        font-size: 15px !important;
+                    }
+                }
+    
+                .text-form {
+                    font-size: 12px;
+                    a {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

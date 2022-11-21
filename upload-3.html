@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Download</title>
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/style-ltr.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Cairo:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Start Head Upload Page 2 -->
+        <div class="head-upload-3">
+            <p class="title-page">My library
+</p>
+
+            <div class="head-app">
+                <a href="upload-2.html">
+                    <img src="images/back.png" alt="icon">
+                </a>
+                <h3>preview
+</h3>
+            </div>
+        </div>
+        <!-- Start Head Upload Page 2 -->
+
+        <!-- Start Page Upload 2 -->
+        <div class="page-upload-3">
+            <div class="content-page-3">
+                <div class="head">
+                    <h2>preview
+</h2>
+                </div>
+
+                <div class="form">
+                    <form action="#">
+                        <div class="input-text">
+                            <label>
+                                <span>title of the book</span>
+
+                                <span class="btn-text">
+                                    <img src="images/icon.png" alt="icon">
+                                </span>
+                            </label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-text">
+                            <label>
+                                <span>Author Name
+</span>
+
+                                <span class="btn-text">
+                                    <img src="images/icon.png" alt="icon">
+                                </span>
+                            </label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-text">
+                            <label>
+                                <span>اlanguage
+</span>
+
+                                <span class="btn-text">
+                                    <img src="images/icon.png" alt="icon">
+                                </span>
+                            </label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-text">
+                            <label>
+                                <span>category
+
+</span>
+
+                                <span class="btn-text">
+                                    <img src="images/icon.png" alt="icon">
+                                </span>
+                            </label>
+                            <input type="text">
+                        </div>
+
+                        <div class="textarea">
+                            <label>
+                                <span>description</span>
+
+                                <span class="btn-text">
+                                    <img src="images/icon.png" alt="icon">
+                                </span>
+                            </label>
+                            <textarea></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="book-slider">
+                    <div class="autoplay-2">
+                        <div>
+                            <img src="images/img-book.png" alt="img">
+                        </div>
+
+                        <div>
+                            <img src="images/img-book.png" alt="img">
+                        </div>
+
+                        <div>
+                            <img src="images/img-book.png" alt="img">
+                        </div>
+
+                        <div>
+                            <img src="images/img-book.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-upload">
+                    <a href="#" class="upload">Download</a>
+                    <a href="upload-2.html">back</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Upload 2 -->
+
+        <!-- Start Popup -->
+        <div class="popup">
+            <div class="content">
+                <img src="images/check-book.png" alt="icon">
+                <p>تم Download bookك بنجاح</p>
+                <a href="#">تفاصيل دفتر الشيكات</a>
+
+                <span class="close">X</span>
+            </div>
+        </div>
+        <!-- End Popup -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            let btnUpload = document.querySelector(".upload");
+            let popup = document.querySelector(".popup");
+            let close = document.querySelector(".close");
+
+            btnUpload.addEventListener("click", () => {
+                popup.classList.add("scale-open")
+            })
+
+            close.addEventListener("click", () => {
+                popup.classList.remove("scale-open")
+            })
+        </script>
+    </body>
+</html>

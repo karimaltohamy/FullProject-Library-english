@@ -1,0 +1,443 @@
+@use "../pages-style/home";
+@use "../pages-style/book-details";
+@use "../pages-style/bookmark";
+@use "../pages-style/upload";
+@use "../pages-style/upload-2";
+@use "../pages-style/upload-3";
+@use "../pages-style/reader-profile";
+@use "../pages-style/author-profile";
+@use "../pages-style/chats";
+@use "../pages-style/authors";
+@use  "../pages-style/signup-login";
+
+
+/* Start Home Page */
+.head-page {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.content-home {
+    margin: 85px 0 0 140px;
+
+    .slider-book {
+        .box-slider {
+            &::before {
+                right: 0;
+                left: auto;
+                background-image: linear-gradient(to right, #fff, #F5F5F5);
+            }
+    
+            .card-slider {
+                direction: ltr;
+            }
+    
+            .next-arrow {
+                right: 20px ;
+                left: auto;
+            }
+    
+            .prev-arrow {
+                right: 70px;
+                left: auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .content-home {
+        margin: 0;
+    }
+
+    .img-head {
+       flex-direction: row-reverse;
+    }
+
+    .search-app {
+        padding: 0px 22px 0px 0px;
+        .user {
+            .drop-menu {
+                left: auto !important;
+                right: 15px;
+
+                .link-profile {
+
+                    &::before {
+                        left: auto !important;
+                        right: 3px;
+                    }
+                }
+
+                .lang {
+                    justify-content: flex-start !important;
+                }
+
+                .logout {
+                    a {
+                        justify-content: flex-start !important;
+
+                        img {
+                            order: 1;
+                            transform: rotate(180deg);
+                        }
+
+                        span {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-book {
+        .app-search-home {
+            input {
+                border-left: 1px solid #284AC2 !important;
+                border-right: transparent !important;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 0px !important;
+                border-bottom-right-radius: 0px !important;
+                font-size: 12px !important;
+            }
+            span {
+                left: auto !important;
+                right: 25px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 0px !important;
+                border-bottom-left-radius: 0px !important;
+            }
+        }
+    }
+}
+/* End Home Page */
+
+/* Start Details page */
+.head-page-details {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-details {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.content-book-details {
+    margin: 85px 0 0 140px;
+    padding: 0 0 0 45px;
+
+    .main-box-details {
+        border-left: none;
+        border-right: 1px solid #E6E6E6;
+
+        .book-author-app {
+            .athor-info {
+                > div {
+                    display: block !important; 
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 600px) {
+    .content-book-details {
+        margin: 0;
+        padding: 0;
+        margin-top: -170px;
+    }
+
+    .head-details-page-app {
+        div {
+            direction: rtl;
+        }
+    }
+
+    .form-app {
+        textarea {
+            border-radius: 15px 0 0 15px;
+        }
+
+        button {
+            border-radius: 0 15px 15px 0;
+        }
+    }
+}
+/* End Details page */
+
+/* Start Bookmark Page */
+.head-page-bookmark {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-bookmark {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.contnet-bookmark {
+    margin: 85px 0 0 140px;
+}
+
+@media(max-width: 991px) {
+    .contnet-bookmark {
+        margin: 0;
+    }
+}
+/* Start Bookmark Page */
+
+/* Start Page profile-1 */
+.head-page-profile-1 {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-profile-1 {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.content-profile-1 {
+    margin: 85px 0 0 140px;
+}
+
+@media(max-width: 991px) {
+    .head-app-profile-1 {
+        direction: rtl;
+    }
+
+    .box-user-info {
+        .img-info {
+            text-align: left !important;
+        }
+    }
+
+    .content-profile-1 {
+        margin: 0;
+    }
+}
+/* End Page profile-1 */
+
+/* Start Page profile-2 */
+.head-page-profile-2 {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-profile-2 {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.content-profile-2 {
+    margin: 85px 0 0 140px;
+}
+
+@media(max-width: 991px) {
+    .head-app-profile-2 {
+        direction: rtl;
+    }
+
+    .box-user-info {
+        .img-info {
+            text-align: left !important;
+        }
+    }
+
+    .content-profile-2 {
+        margin: 0;
+    }
+}
+/* End Page profile-2 */
+
+/* Start Page Chats */
+.head-page-chats {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-chats {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+}
+
+.content-chats {
+    margin: 85px 0 0 140px;
+
+    .head {
+        .settings {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .search {
+        input {
+            font-size: 14px !important;
+        }
+
+        img {
+            right: 15px !important;
+            left: auto !important;
+        }
+    }
+}
+
+.type-chat {
+    .chat-content {
+        .right {
+            p {
+                border-radius: 15px 15px 15px 0 !important;
+            }
+        }
+
+        .left {
+            p {
+                border-radius: 15px 15px 0 15px !important;
+            }
+        }
+    }
+
+    .input-chat {
+        .input {
+            img {
+                right: 20px;
+                left: auto !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .head-app-chats {
+        direction: rtl;
+    }
+
+    .content-chats {
+        margin: 0;
+    }
+}
+/* End Page Chats */
+
+/* Start Page Authors */
+.head-page-authors {
+    .search {
+        input {
+            padding: 15px 15px 15px 40px;
+        }
+
+        img {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.aside-authors {
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E6E6;
+
+    .sign {
+        display: none !important;
+    }
+}
+
+
+
+.content-authors {
+    margin: 85px 0 0 140px;
+}
+
+@media(max-width: 750px) {
+    .content-authors {
+        margin: 0 !important;
+    }
+}
+/* End Page Authors */
+
+
+// login and sign up
+.account {
+    .box-input {
+        svg {
+            left: auto !important;
+            right: 5px;
+        }
+    }
+}
+// login and sign up
+
+
+// head-app pages upload
+.head-app {
+    a {
+        left: auto !important;
+        right: 15px;
+    }
+}
+// head-app pages upload
