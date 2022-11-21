@@ -5721,7 +5721,7 @@ hr {
     width: 19px;
   }
   .type-chat .chat-content {
-    min-height: 430px !important;
+    height: 410px !important;
   }
   .type-chat .chat-content div {
     margin-bottom: 5px !important;
