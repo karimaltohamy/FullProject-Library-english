@@ -1,6 +1,7 @@
 $(".autoplay").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
+  lazyLoad: "progressive",
   infinite: true,
   autoplay: true,
   autoplaySpeed: 1500,
