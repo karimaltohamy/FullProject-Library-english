@@ -18,7 +18,7 @@
         <div class="name-site">
             <img class="icon-list-web" src="images/icon open-menu.png" alt="menu-icon">
             <a href="index.html">
-                <img src="images/Logo_web.png" alt="logo">
+                <img src="images/Logo_web.jpg" alt="logo">
             </a>
         </div>
 
@@ -108,7 +108,7 @@
     <div class="menu-mobil">
         <div class="head">
             <img class="close-menu-mobil" src="images/icon-close.svg" alt="">
-            <img class="mobil-logo" src="images/Logo-page-1.webp" alt="">
+            <img class="mobil-logo" src="images/Logo-page-1.jpg" alt="">
         </div>
         <ul class="mobil-list">
             <li class="mobil-list-item">
@@ -292,15 +292,26 @@
         <script>
             let btnUpload = document.querySelector(".upload");
             let popup = document.querySelector(".popup");
-            let close = document.querySelector(".close");
+            let closePopup = document.querySelector(".close");
 
             btnUpload.addEventListener("click", () => {
                 popup.classList.add("scale-open")
             })
 
-            close.addEventListener("click", () => {
+            closePopup.addEventListener("click", () => {
                 popup.classList.remove("scale-open")
             })
+
+             
+        </script>
+        <script>
+            document.querySelector(".click-lang").onclick = () => {
+                document.querySelector(".choose").classList.toggle("open-lang")
+            }
+
+            // document.querySelector(".img-user").onclick = () => {
+            //     document.querySelector(".drop-menu").classList.toggle("open-menu")
+            // }
         </script>
     </body>
 </html>

@@ -2546,7 +2546,7 @@ hr {
 /* Start Page Upload 2 */
 .page-upload-2 {
   background-color: #F8F8F8;
-  padding: 30px 0 0 0;
+  padding: 30px 0 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5070,7 +5070,7 @@ hr {
   }
 }
 .active-margin {
-  margin: 70px 0 0 85px !important;
+  margin: 70px 0 0 85px;
 }
 
 /* Start Home Page */
@@ -5190,7 +5190,7 @@ hr {
 
 .content-book-details {
   margin: 70px 0 0 120px;
-  padding: 0 0 0 45px;
+  padding: 0 0 0 20px;
 }
 .content-book-details .main-box-details {
   border-left: none;
@@ -5397,4 +5397,11 @@ hr {
   padding-right: 40px;
   margin-top: -3px !important;
   font-size: 12px !important;
+}
+
+@media (max-width: 1200px) {
+  .page-upload-3 .content-page-3 {
+    margin-left: 110px !important;
+    margin-right: 0 !important;
+  }
 }
