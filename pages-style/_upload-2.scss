@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 
     .title-page {
         margin: 0;
@@ -19,15 +20,18 @@
 /* Start Page Upload 2 */
 .page-upload-2 {
     background-color: #F8F8F8;
-    padding: 30px 0 100px 0;
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .content-page-2 {
         background-color: #FFF;
         width: 50%;
-        padding: 25px;
+        padding: 20px;
         border: 1px solid #CCC;
         border-radius: 8px;
-        margin: auto;
+        margin: 70px 0 0 0;
 
         .head {
             text-align: center;
@@ -37,8 +41,9 @@
             }
 
             p {
-                margin-top: 10px;
-                color: #171717;
+                margin-top: -5px;
+                color: gray;
+                font-size: 15px;
             }
         }
 
@@ -46,13 +51,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 20px;
 
             form {
                 width: 60%;
 
                 .input-text {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     label {
                         margin-bottom: 10px;
@@ -69,7 +74,7 @@
                 }
 
                 .textarea {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     label {
                         margin-bottom: 10px;
@@ -97,17 +102,18 @@
                     label {
                         border: 2px dashed #ABABAB;
                         width: 100%;
-                        padding: 30px 20px;
+                        padding: 20px;
                         cursor: pointer;
 
                         p {
                             margin-bottom: 0;
+                            font-size: 14px;
                         }
                     }
                 }
 
                 .check {
-                    margin-bottom: 45px;
+                    margin-bottom: 15px;
 
                     input, label {
                         cursor: pointer;
@@ -123,7 +129,7 @@
                     a {
                         width: 50% ;
                         text-align: center;
-                        padding: 8px;
+                        padding: 5px;
                         border-radius: 5px;
 
                         &:first-of-type {
@@ -148,19 +154,18 @@
 
 @media(max-width: 1200px) {
     .page-upload-2 {
-        padding: 0;
-        
         .content-page-2 {
             width: 70% !important;
         }
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 650px) {
     .head-upload-2 {
         height: 230px;
         background-color: #284AC2;
         padding: 20px;
+        display: flex;
 
         .title-page {
             display: none;
@@ -190,12 +195,13 @@
     .page-upload-2 {
         background-color: #FFF;
         overflow: hidden;
-        padding: 0;
+        padding: 10px 0 100px 0;
 
         .content-page-2 {
             width: 100% !important;
             border: none;
             background-color: transparent;
+            margin: 0 !important;
 
             .head {
                 display: none;

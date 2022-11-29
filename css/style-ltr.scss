@@ -1,4 +1,6 @@
 @use "../pages-style/home";
+@use "../components/aside";
+@use "../components/head-page";
 @use "../pages-style/book-details";
 @use "../pages-style/bookmark";
 @use "../pages-style/upload";
@@ -10,6 +12,10 @@
 @use "../pages-style/authors";
 @use  "../pages-style/signup-login";
 
+
+.active-margin {
+    margin: 70px 0 0 85px !important;
+}
 
 /* Start Home Page */
 .head-page {
@@ -32,7 +38,8 @@
 }
 
 .content-home {
-    margin: 85px 0 0 140px;
+    margin: 70px 0 0 120px;
+    transition: all 0.3s;
 
     .slider-book {
         .box-slider {
@@ -150,7 +157,7 @@
 }
 
 .content-book-details {
-    margin: 85px 0 0 140px;
+    margin: 70px 0 0 120px;
     padding: 0 0 0 45px;
 
     .main-box-details {
@@ -245,10 +252,10 @@
 }
 
 .content-profile-1 {
-    margin: 85px 0 0 140px;
+    margin: 70px 0 0 120px;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 650px) {
     .head-app-profile-1 {
         direction: rtl;
     }
@@ -289,7 +296,7 @@
     margin: 85px 0 0 140px;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 650px) {
     .head-app-profile-2 {
         direction: rtl;
     }
@@ -353,12 +360,15 @@
             p {
                 border-radius: 15px 15px 15px 0 !important;
             }
+
         }
 
         .left {
             p {
                 border-radius: 15px 15px 0 15px !important;
             }
+
+            
         }
     }
 
@@ -379,8 +389,11 @@
 
     .content-chats {
         margin: 0;
+
+    
     }
 }
+
 /* End Page Chats */
 
 /* Start Page Authors */
@@ -413,7 +426,7 @@
     margin: 85px 0 0 140px;
 }
 
-@media(max-width: 750px) {
+@media(max-width: 650px) {
     .content-authors {
         margin: 0 !important;
     }

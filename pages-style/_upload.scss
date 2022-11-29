@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 
     .title-page {
         margin: 0;
@@ -27,10 +28,12 @@
     .content-page {
         background-color: #FFF;
         height: 700px;
-        width: 50%;
+        margin: 70px 35px 0 0;
+        width: 60%;
         padding: 25px;
         border: 1px solid #CCC;
         border-radius: 8px;
+        transition: all 0.3s ease;
 
         .head {
             text-align: center;
@@ -112,7 +115,7 @@
         .btn-next {
             display: block;
             margin: auto;
-            width: 370px;
+            width: 250px;
             background-color: blue;
             color: #FFF;
             text-align: center;
@@ -126,11 +129,12 @@
     display: none;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 650px) {
     .head-upload {
         height: 230px;
         background-color: #284AC2;
         padding: 20px;
+        display: flex;
 
         .title-page {
             display: none;
@@ -143,7 +147,7 @@
 
             img {
                 display: block;
-                margin-right: auto;
+                margin-left: auto;
             }
 
             h3 {
@@ -191,8 +195,8 @@
 
 @media(max-width: 500px) {
     .head-upload {
-        height: 90px;
-        padding: 10px 20px;
+        height: 80px;
+        padding: 5px 20px;
         position: relative;
 
         .head-app {

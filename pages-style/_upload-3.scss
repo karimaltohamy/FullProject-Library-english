@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 
     .title-page {
         margin: 0;
@@ -29,27 +30,25 @@
 /* Start Page Upload 2 */
 .page-upload-3 {
     background-color: #F8F8F8;
-    padding: 30px 0 100px 0;
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .content-page-3 {
         background-color: #FFF;
         width: 50%;
-        padding: 25px 25px 50px 25px;
+        padding: 10px;
         border: 1px solid #CCC;
         border-radius: 8px;
-        margin: auto;
+        margin: 60px 0 10px 0;
 
         .head {
             text-align: center;
-            margin-bottom: 80px;
 
             h2 {
                 margin-bottom: 0;
-            }
-
-            p {
-                margin-top: 10px;
-                color: #171717;
+                font-size: 22px;
             }
         }
 
@@ -57,30 +56,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 10px;
+
 
             form {
                 width: 60%;
 
                 .input-text {
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
 
                     label {
-                        margin-bottom: 12px;
+                        margin-bottom: 2px;;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        span {
+                            font-size: 15px;
+                        }
 
                         .btn-text {
                             display: flex;
                             align-items: center;
                             cursor: pointer;
+
+                            img {
+                                width: 24px;
+                            }
                         }
                     }
 
                     input {
                         width: 100%;
-                        padding: 12px 15px;
+                        padding: 7px 15px;
                         border: 1px solid #ABABAB;
                         border-radius: 10px;
                         font-size: 17px;
@@ -89,25 +97,33 @@
                 }
 
                 .textarea {
-                    margin-bottom: 30px;
+                    margin-bottom: 0;
 
                     label {
-                        margin-bottom: 12px;
+                        margin-bottom: 2px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        span {
+                            font-size: 15px;
+                        }
 
                         .btn-text {
                             display: flex;
                             align-items: center;
                             cursor: pointer;
+
+                            img {
+                                width: 24px;
+                            }
                         }
                     }
 
                     textarea {
                         width: 100%;
-                        height: 150px;
-                        padding: 10px 15px;
+                        height: 120px;
+                        padding: 7px 15px;
                         resize: none;
                         border: 1px solid #ABABAB;
                         border-radius: 10px;
@@ -122,14 +138,15 @@
         .book-slider {
             width: 60%;
             margin: auto;
-            padding: 20px;
-            margin-bottom: 60px;
+            padding: 10px 20px;
+            margin-bottom: 7px;
             text-align: center;
 
             img {
                 width: 90%;
                 margin: auto;
                 object-fit: cover;
+                height: 230px;
             }
         }
 
@@ -144,7 +161,8 @@
             a {
                 width: 50%;
                 text-align: center;
-                padding: 8px;
+                padding: 5px;
+                font-size: 15px;
                 border-radius: 10px;
 
                 &:first-of-type {
@@ -169,15 +187,17 @@
     .page-upload-3 {
         .content-page-3 {
             width: 70% !important;
+            margin-right: 110px;
         }
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 650px) {
     .head-upload-3 {
         height: 170px;
         background-color: #284AC2;
         padding: 20px;
+        display: flex;
 
         .title-page {
             display: none;
@@ -207,12 +227,13 @@
     .page-upload-3 {
         background-color: #FFF;
         overflow: hidden;
-        padding: 0;
+        padding: 0 0 100px;
 
         .content-page-3 {
             width: 100% !important;
             border: none;
             background-color: transparent;
+            margin: 0;
 
             .head {
                 display: none;

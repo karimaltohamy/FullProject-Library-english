@@ -1,0 +1,147 @@
+$bg-color: #FFF;
+$text-color: #000;
+$blue-color: #284AC2;
+
+/* Start Aside */
+.aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border-left: 1px solid #E6E6E6;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 120px;
+    background-color: white;
+    transition: all 0.3s ease;
+    z-index: 99;
+
+    &.active-aside {
+        width: 65px;
+        padding-top: 95px;
+
+        a {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #959595;
+        gap: 5px;
+        font-size: 14px;
+
+        img {
+            height: 22px;
+        }
+
+        svg {
+            height: 27px !important;
+            width: auto !important;
+        }
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .active-page {
+        color: $blue-color;
+    }
+}
+
+@media (max-width: 650px) {
+    .aside {
+        height: fit-content !important;
+        width: 100% !important;
+        top: auto;
+        bottom: 0;
+        right: 0 !important;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+        z-index: 999;
+        background-color: $bg-color;
+        padding: 5px 0 !important;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 -5px 12px -5px #878787, 0 5px 5px -5px #333;
+
+        .authors,
+        .sign {
+            display: none;
+        }
+
+
+        .toggle-menu {
+            display: flex;
+
+            svg {
+                width: 24px;
+                transform: translateY(2px) !important;
+            }
+
+            span {
+                transform: translateY(-3px) !important;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #959595;
+            gap: 4px;
+            font-size: 14px;
+
+            span {
+                display: block !important;
+            }
+        }   
+
+        img {
+            object-fit: contain;
+        }
+
+        img:first-child {
+            width:26px;
+             height:18px;
+        }
+
+        img:nth-child(2) {
+            width:13px;
+             height:18px;
+        }
+
+        img:nth-child(3) {
+            width:18px;
+             height:18px;
+        }
+
+        img:nth-child(4) {
+            width:20px;
+             height:20px;
+        }
+
+        img:nth-child(5) {
+            width:20px;
+             height:20px;
+        }
+
+
+
+        span {
+            font-size: 10px;
+        }
+    }
+}
+
+/* End Aside */
