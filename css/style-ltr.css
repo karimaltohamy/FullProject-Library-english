@@ -1436,8 +1436,8 @@ hr {
 .content-book-details .interaction .comments .comment-user .info-cooment .like > span {
   cursor: pointer;
 }
-.content-book-details .interaction .comments .comment-user .info-cooment .more {
-  margin-top: 8px;
+.content-book-details .interaction .comments .comment-user .more {
+  margin-top: 8px !important;
 }
 .content-book-details .interaction::-webkit-scrollbar {
   width: 10px;
