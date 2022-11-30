@@ -121,6 +121,17 @@ $blue-color: #284AC2;
                     color: $blue-color;
                     border-radius: 5px;
                     border: 0;
+                    cursor: pointer;
+                }
+
+                .google {
+                    background-color: #DB4437;
+                    color: white;
+                }
+
+                .facebook {
+                    background-color: #4267B2;
+                    color: white;
                 }
             }
 

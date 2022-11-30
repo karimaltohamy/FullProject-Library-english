@@ -23,8 +23,12 @@ $blue-color: #284AC2;
         padding-top: 95px;
 
         a {
-            span {
+            span:first-child {
                 display: none;
+            }
+
+            .massage {
+                right: 13px;
             }
         }
     }
@@ -37,6 +41,7 @@ $blue-color: #284AC2;
         color: #959595;
         gap: 5px;
         font-size: 14px;
+        position: relative;
 
         img {
             height: 22px;
@@ -45,6 +50,22 @@ $blue-color: #284AC2;
         svg {
             height: 27px !important;
             width: auto !important;
+        }
+
+        .massage {
+            position: absolute;
+            top: -2px;
+            right: 35px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            font-size: 13px;
+            color: white;
+            transition: all 0.3s;
         }
     }
 
@@ -102,7 +123,7 @@ $blue-color: #284AC2;
             gap: 4px;
             font-size: 14px;
 
-            span {
+            span:first-child {
                 display: block !important;
             }
         }   
@@ -111,29 +132,9 @@ $blue-color: #284AC2;
             object-fit: contain;
         }
 
-        img:first-child {
-            width:26px;
-             height:18px;
-        }
-
-        img:nth-child(2) {
-            width:13px;
-             height:18px;
-        }
-
-        img:nth-child(3) {
-            width:18px;
-             height:18px;
-        }
-
-        img:nth-child(4) {
-            width:20px;
-             height:20px;
-        }
-
-        img:nth-child(5) {
-            width:20px;
-             height:20px;
+        .massage {
+            top: -1px !important;
+            right: -6px !important;
         }
 
 

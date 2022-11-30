@@ -11,10 +11,11 @@
 @use "../pages-style/chats";
 @use "../pages-style/authors";
 @use  "../pages-style/signup-login";
+@use "../pages-style/profile-details";
 
 
 .active-margin {
-    margin: 70px 0 0 85px;
+    margin: 70px 0 0 85px !important;
 }
 
 /* Start Home Page */
@@ -175,11 +176,11 @@
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 650px) {
     .content-book-details {
-        margin: 0;
+        margin: 0 !important;
         padding: 0;
-        margin-top: -170px;
+        margin-top: -170px !important;
     }
 
     .head-details-page-app {
@@ -267,7 +268,7 @@
     }
 
     .content-profile-1 {
-        margin: 0;
+        margin: 0 !important;
     }
 }
 /* End Page profile-1 */
@@ -466,9 +467,16 @@
 @media(max-width: 1200px) {
     .page-upload-3 {
         .content-page-3 {
-            margin-left: 110px !important;
             margin-right: 0 !important;
         }
     }
 }
+// end page upload 3
 
+// start profile details
+.profile-details {
+    label {
+        font-weight: 600 !important;
+    }
+}
+// end profile details
