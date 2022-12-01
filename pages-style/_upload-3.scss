@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 
     .title-page {
         margin: 0;
@@ -30,7 +29,7 @@
 /* Start Page Upload 2 */
 .page-upload-3 {
     background-color: #F8F8F8;
-    padding: 30px 0 0 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +40,7 @@
         padding: 10px;
         border: 1px solid #CCC;
         border-radius: 8px;
-        margin: 60px 0 10px 0;
+        margin: 0;
 
         .head {
             text-align: center;
