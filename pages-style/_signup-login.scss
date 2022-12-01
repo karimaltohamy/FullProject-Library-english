@@ -46,17 +46,9 @@ $blue-color: #284AC2;
             padding: 30px;
 
             .logo-form {
-                margin: auto;
-                width: 110px;
-                height: 110px;
-                background-color: white;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                svg {
-                    width: 100px;
-                    color: $blue-color;
+                text-align: center;
+                img {
+                    width: 185px;
                 }
             }
 
@@ -113,6 +105,8 @@ $blue-color: #284AC2;
 
             .container-btn {
                 margin: 30px auto 20px;
+                display: flex;
+                gap: 20px;
 
                 .btn-form {
                     padding: 12px 41px;
@@ -122,6 +116,13 @@ $blue-color: #284AC2;
                     border-radius: 5px;
                     border: 0;
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    img {
+                        width: 25px;
+                    }
                 }
 
                 .google {

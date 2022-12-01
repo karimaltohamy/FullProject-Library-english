@@ -23,12 +23,13 @@ $blue-color: #284AC2;
         padding-top: 95px;
 
         a {
-            span:first-child {
+            span {
                 display: none;
             }
 
             .massage {
                 right: 13px;
+                display: flex !important;
             }
         }
     }

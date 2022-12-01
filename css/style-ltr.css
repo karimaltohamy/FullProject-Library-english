@@ -767,11 +767,14 @@ hr {
   width: 65px;
   padding-top: 95px;
 }
-.aside.active-aside a span:first-child {
+.aside.active-aside a span {
   display: none;
 }
 .aside.active-aside a .massage {
   right: 13px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .aside a {
   display: -webkit-box;
@@ -5211,24 +5214,10 @@ hr {
   padding: 30px;
 }
 .container .account .form-account .logo-form {
-  margin: auto;
-  width: 110px;
-  height: 110px;
-  background-color: white;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
-.container .account .form-account .logo-form svg {
-  width: 100px;
-  color: #284AC2;
+.container .account .form-account .logo-form img {
+  width: 185px;
 }
 .container .account .form-account .box-input {
   position: relative;
@@ -5281,6 +5270,10 @@ hr {
 }
 .container .account .form-account .container-btn {
   margin: 30px auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 .container .account .form-account .container-btn .btn-form {
   padding: 12px 41px;
@@ -5290,6 +5283,16 @@ hr {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.container .account .form-account .container-btn .btn-form img {
+  width: 25px;
 }
 .container .account .form-account .container-btn .google {
   background-color: #DB4437;
@@ -5380,24 +5383,44 @@ hr {
   }
 }
 .profile-details {
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  padding: 20px;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.438);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+.profile-details.active-profile-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .profile-details .content {
+  background-color: white;
   width: 100%;
   max-width: 900px;
   border: 1px solid #284AC2;
   border-radius: 4px;
+  position: relative;
+}
+.profile-details .content .close-profile-details {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
 }
 .profile-details .content h3 {
   background-color: #284AC2;
