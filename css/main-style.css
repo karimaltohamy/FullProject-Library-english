@@ -1205,6 +1205,202 @@ hr {
   color: #284AC2;
 }
 
+.download-book {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+.download-book .content {
+  background-color: white;
+  width: 400px;
+  margin: 0 20px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  display: none;
+  position: relative;
+}
+.download-book .content .close-download-book {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.download-book .content h4 {
+  color: #284AC2;
+  margin-bottom: 15px;
+}
+.download-book .content .progress-download {
+  height: 25px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.3215686275);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.download-book .content .progress-download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 25px;
+  background-color: #284AC2;
+  border-radius: 50px;
+}
+.download-book.active-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.download-book.active-download .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.download-book.active-download .content .progress-download::before {
+  -webkit-animation: layer 10s ease-in-out forwards;
+          animation: layer 10s ease-in-out forwards;
+}
+
+.download-link {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+.download-link.active-download-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.download-link .content {
+  background-color: white;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.download-link .content i {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.download-link .content .numbers {
+  text-align: center;
+  margin-top: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.download-link .content .numbers p {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.download-link .content .numbers p span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.download-link .content .book-link {
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  background-color: rgba(128, 128, 128, 0.1803921569);
+  border-radius: 50px;
+}
+.download-link .content .book-link a {
+  display: block;
+  color: #284AC2;
+  font-weight: 500;
+  font-size: 17px;
+}
+.download-link .content .links {
+  margin: 20px 0;
+  text-align: center;
+}
+.download-link .content .links a {
+  width: 100%;
+  max-width: 180px;
+  padding: 8px 20px;
+  background-color: white;
+  color: #284AC2;
+  border-radius: 10px !important;
+  border: 1px solid #284AC2;
+  display: inline-block;
+}
+.download-link .content .panel {
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+}
+.download-link .content .panel img {
+  width: 170px;
+  border-radius: 50%;
+}
+.download-link .content .panel h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.download-link .content .panel p {
+  font-size: 13px;
+  color: gray;
+}
+.download-link .content .panel a {
+  width: 100%;
+  max-width: 220px;
+  padding: 8px 20px;
+  background-color: white;
+  color: #fd0303;
+  border-radius: 50px !important;
+  border: 2px solid #fd0303;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 1330px) {
   .content-book-details {
     height: auto;
@@ -1614,6 +1810,16 @@ hr {
   }
 }
 /* End Content Book Details */
+@-webkit-keyframes layer {
+  100% {
+    left: 0;
+  }
+}
+@keyframes layer {
+  100% {
+    left: 0;
+  }
+}
 /* start mobil menu*/
 .menu-mobil {
   position: fixed;

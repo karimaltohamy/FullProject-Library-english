@@ -48,7 +48,7 @@
                     </div>
                 </div>
     
-                <a class="upload-icon" href="upload.html" title="انشر كتاب">
+                <a class="upload-icon" href="upload.html" title="Publish a book">
                     <img src="images/icon upload.png" alt="icon">
                 </a>
     
@@ -271,7 +271,7 @@
     
                         <div class="button-book">
                             <a href="#">reading</a>
-                            <a class="download" href="upload.html">download</a>
+                            <a class="download" href="#">download</a>
                             <a class="share" href="#">share</a>
                         </div>
                     </div>
@@ -767,6 +767,46 @@
                 </div>
             </div>
             <!-- end share links -->
+
+            <!-- start popup download book -->
+            <div class="download-book">
+                <div class="content">
+                    <i class="fa-solid fa-xmark close-download-book"></i>
+                    <h4>The book is being prepared</h4>
+                    <div class="progress-download"></div>
+                </div>
+            </div>
+            <!-- end popup download book -->
+
+             <!-- start popup download link -->
+             <div class="download-link">
+                <div class="content">
+                    <i class="fa-solid fa-xmark close-popup-link"></i>
+
+                    <div class="numbers">
+                        <p>324,831 <span>Book in the library so far
+                        </span></p>
+                        <p>126,384 <span>Author in the library so far</span></p>
+                    </div>
+                    <div class="book-link">
+                        <a href="#">Download Link (pdf)</a>
+                    </div>
+                    <div class="links">
+                        <a href="upload.html">Publish a book</a>
+                    </div>
+                    <div class="panel">
+                        <img src="images/img-heart.jpg" alt="">
+                        <h3>What a great library of benefit and we hope to continue
+                        </h3>
+                        <p>Support us by donating a small amount so we can cover the costs and keep going
+                        </p>
+                        <a>Donate to us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end popup download link -->
+
         </div>
         <!-- End Content Book Details -->
         <script src="js/toggle.js"></script>
@@ -788,6 +828,38 @@
                 shareLinks.classList.remove("active-share")
             })
             // start popup share links
+
+              // start download-book
+            let downloadBtn = document.querySelector(".download")
+            let downloadBook = document.querySelector(".download-book")
+            let downloadLink = document.querySelector(".download-link")
+            let closeDownloadBook = document.querySelector(".close-download-book")
+
+            downloadBtn.addEventListener("click", (e) => {
+                e.preventDefault()
+                downloadBook.classList.add("active-download")
+
+                setTimeout(() => {
+                    downloadBook.classList.remove("active-download")
+                    if (!downloadLink.classList.contains("end-download")) {
+                        downloadLink.classList.add("active-download-link")
+                    }
+                }, 10000)
+            })
+
+            closeDownloadBook.addEventListener("click", () => {
+                downloadBook.classList.remove("active-download")
+                downloadLink.classList.add("end-download")
+            })
+            // end download-book
+
+            // start popup download link
+            let closeDownloadLink = document.querySelector(".close-popup-link")
+
+            closeDownloadLink.addEventListener("click", () => {
+                downloadLink.classList.remove("active-download-link")
+            })
+            // end popup download link
             
         </script>
     </body>
