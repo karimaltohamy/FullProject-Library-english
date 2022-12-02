@@ -22,7 +22,7 @@ $blue-color: #284AC2;
 
     .content {
         background-color: white;
-        width: 100%;
+        width: 90%;
         max-width: 900px;
         border: 1px solid $blue-color;
         border-radius: 4px;
@@ -116,6 +116,7 @@ $blue-color: #284AC2;
 @media(max-width: 650px) {
     .profile-details {
         align-items: flex-start !important;
+        padding-top: 40px;
         .content {
             h3 {
                 font-size: 15px !important;

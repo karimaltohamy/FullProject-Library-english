@@ -12,6 +12,7 @@
 @use "../pages-style/authors";
 @use  "../pages-style/signup-login";
 @use "../pages-style/profile-details";
+@use "../pages-style/contact-us";
 
 
 .active-margin {
@@ -480,3 +481,17 @@
     }
 }
 // end profile details
+
+// start content-contect-us
+.content-contect-us {
+    margin: 70px 0 0 120px;
+
+    .form {
+        .line {
+            .input-form {
+                text-align: left !important;
+            }
+        }
+    }
+}
+// end content-contect-us
