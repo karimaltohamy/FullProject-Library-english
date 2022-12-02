@@ -206,7 +206,7 @@ body {
 /* Start Content Page Home */
 .content-home {
   overflow: hidden;
-  margin: 70px 120px 0 0;
+  margin: 70px 110px 0 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -440,8 +440,8 @@ hr {
           box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.662745098);
   display: block;
   color: #000;
-  min-height: 385px;
-  padding: 30px 10px 20px;
+  min-height: 365px;
+  padding: 30px 10px 10px;
   text-align: center;
   position: relative;
   border-radius: 15px;
@@ -741,6 +741,48 @@ hr {
   }
 }
 /* End Responsive Page */
+.copy-right {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.copy-right > p {
+  font-size: 15px;
+  color: gray;
+}
+.copy-right .list-copy-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+.copy-right .list-copy-right li a {
+  color: #333;
+}
+
+@media (max-width: 650px) {
+  .copy-right {
+    margin-bottom: 65px;
+  }
+  .copy-right p {
+    font-size: 11px !important;
+  }
+  .copy-right .list-copy-right {
+    gap: 10px !important;
+  }
+  .copy-right .list-copy-right li a {
+    font-size: 14px !important;
+  }
+}
 /* Start Content Book Details */
 .content-book-details {
   overflow: hidden;
@@ -765,7 +807,7 @@ hr {
   padding: 20px 0 40px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -779,8 +821,8 @@ hr {
   border-radius: 20px;
   display: block;
   color: #000;
-  min-height: 430px;
-  padding: 20px 10px;
+  min-height: 365px;
+  padding: 30px 20px 10px;
   text-align: center;
   position: relative;
 }
@@ -797,17 +839,17 @@ hr {
   position: relative;
 }
 .content-book-details .main-box-details .author-book .card-book-author .img-book img:first-of-type {
-  width: 200px;
+  width: 220px;
   height: 260px;
 }
 .content-book-details .main-box-details .author-book .card-book-author p {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 17px;
   font-weight: 500;
   text-align: center;
 }
 .content-book-details .main-box-details .author-book .card-book-author > div {
-  margin-top: 5px;
+  margin-top: -12px;
 }
 .content-book-details .main-box-details .author-book .card-book-author > div span {
   font-size: 15px;
@@ -856,6 +898,31 @@ hr {
 .content-book-details .box-details .details .head .hart span {
   color: #D60505;
   font-weight: 600;
+}
+.content-book-details .box-details .details .head .favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 15px;
+  border-radius: 8px;
+  background-color: #ececec;
+  cursor: pointer;
+}
+.content-book-details .box-details .details .head .favorite svg {
+  width: 25px;
+}
+.content-book-details .box-details .details .head .favorite svg.active-favorite {
+  display: block;
+}
+.content-book-details .box-details .details .head .favorite svg.remove-favorite {
+  display: none;
+}
+.content-book-details .box-details .details .head .favorite .outline-favorite {
+  color: #686868;
+}
+.content-book-details .box-details .details .head .favorite .solid-favorite {
+  color: #D60505;
+  display: none;
 }
 .content-book-details .box-details .details .book-author {
   display: -webkit-box;
@@ -1778,12 +1845,19 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 5px;
   }
   .content-book-details .box-details .details .head h2 {
     font-size: 15px;
   }
   .content-book-details .box-details .details .head .hart {
     display: none !important;
+  }
+  .content-book-details .box-details .details .head .favorite {
+    padding: 3px 9px !important;
+  }
+  .content-book-details .box-details .details .head .favorite svg {
+    width: 18px !important;
   }
   .content-book-details .box-details .book-author {
     -webkit-box-pack: center;
@@ -1860,8 +1934,14 @@ hr {
     gap: 10px !important;
   }
   .content-book-details .box-details .button-book a {
-    padding: 2px 25px !important;
-    font-size: 14px !important;
+    padding: 2px 20px !important;
+    font-size: 12px !important;
+  }
+  .content-book-details .box-details .button-book a svg {
+    width: 15px !important;
+  }
+  .content-book-details .box-details .button-book .evaluation {
+    display: none !important;
   }
   .content-book-details .book-author-app {
     padding: 0px 20px;
@@ -2567,9 +2647,9 @@ hr {
 }
 .page-upload .content-page {
   background-color: #FFF;
-  height: 700px;
+  height: 450px;
   width: 60%;
-  padding: 25px;
+  padding: 15px;
   border: 1px solid #CCC;
   border-radius: 8px;
   -webkit-transition: all 0.3s ease;
@@ -2582,7 +2662,7 @@ hr {
   margin-bottom: 0;
 }
 .page-upload .content-page .head p {
-  margin-top: 10px;
+  margin-top: -5px;
   color: #171717;
 }
 .page-upload .content-page .box-category {
@@ -3883,6 +3963,7 @@ hr {
   background-color: #FFF;
   width: 28%;
   height: 700px;
+  border-radius: 5px;
   border: 1px solid #CCC;
 }
 .content-profile-2 .box-container .box-user-info .img {
@@ -3972,13 +4053,12 @@ hr {
 }
 .content-profile-2 .box-container .reading {
   background-color: #FFF;
-  padding: 30px;
+  padding: 0 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   height: 700px;
   overflow: auto;
-  border: 1px solid #CCC;
 }
 .content-profile-2 .box-container .reading .head {
   display: -webkit-box;
@@ -3990,7 +4070,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 .content-profile-2 .box-container .reading .head h2 {
   margin: 0;
@@ -4006,8 +4086,8 @@ hr {
   gap: 20px;
 }
 .content-profile-2 .box-container .reading .box-book .box {
-  -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.4156862745);
-          box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.4156862745);
+  -webkit-box-shadow: -1px 9px 15px 0 rgba(204, 204, 204, 0.42);
+          box-shadow: -1px 9px 15px 0 rgba(204, 204, 204, 0.42);
   border-radius: 15px;
   overflow: hidden;
   color: #000;
@@ -4020,7 +4100,7 @@ hr {
 }
 .content-profile-2 .box-container .reading .box-book .box .img img {
   width: 100%;
-  height: 250px;
+  height: 215px;
 }
 .content-profile-2 .box-container .reading .box-book .box .info-book {
   text-align: center;
@@ -4044,6 +4124,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
+  margin-top: -12px;
 }
 .content-profile-2 .box-container .reading::-webkit-scrollbar {
   width: 5px;
@@ -5151,20 +5232,20 @@ hr {
   width: 90%;
   border-radius: 5px;
   margin: auto;
-  padding: 30px;
+  padding: 10px 30px;
 }
 .container .account .form-account .logo-form {
   text-align: center;
 }
 .container .account .form-account .logo-form img {
-  width: 185px;
+  width: 175px;
 }
 .container .account .form-account .box-input {
   position: relative;
 }
 .container .account .form-account .box-input .input-form {
   border-radius: 5px;
-  margin: 15px 0px;
+  margin: 10px 0px;
   outline: none;
   padding: 8px 10px;
   width: 100%;
@@ -5209,7 +5290,7 @@ hr {
   background-color: #c1c1c1;
 }
 .container .account .form-account .container-btn {
-  margin: 30px auto 20px;
+  margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5232,7 +5313,7 @@ hr {
   gap: 5px;
 }
 .container .account .form-account .container-btn .btn-form img {
-  width: 25px;
+  width: 20px;
 }
 .container .account .form-account .container-btn .google {
   background-color: #DB4437;
@@ -5280,7 +5361,7 @@ hr {
   .container {
     height: calc(100ch - 655px);
     display: block;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .container .account .title-account {
     font-size: 16px !important;
@@ -5288,12 +5369,8 @@ hr {
   .container .account .form-account {
     padding: 15px !important;
   }
-  .container .account .form-account .logo-form {
-    width: 70px !important;
-    height: 70px !important;
-  }
-  .container .account .form-account .logo-form svg {
-    width: 60px !important;
+  .container .account .form-account .logo-form img {
+    width: 130px !important;
   }
   .container .account .form-account .box-input .input-form {
     margin: 8px 0px !important;
@@ -5302,7 +5379,7 @@ hr {
   }
   .container .account .form-account .box-input .icon-input {
     width: 15px !important;
-    left: 7px !important;
+    right: 7px !important;
   }
   .container .account .form-account label[for=file-input] {
     padding: 2px 9px !important;
@@ -5312,8 +5389,11 @@ hr {
     margin: 20px auto 10px !important;
   }
   .container .account .form-account .container-btn .btn-form {
-    padding: 10px 20px !important;
-    font-size: 15px !important;
+    padding: 9px 20px !important;
+    font-size: 13px !important;
+  }
+  .container .account .form-account .container-btn .btn-form img {
+    width: 18px !important;
   }
   .container .account .form-account .text-form {
     font-size: 12px;
