@@ -5949,13 +5949,15 @@ hr {
 
 .content-contect-us {
   overflow: hidden;
-  margin: 70px 120px 0 0;
+  margin: 70px 0 0 110px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .content-contect-us .container-boxs {
   padding: 20px 20px;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 74, 194, 0.3098039216)), to(transparent));
+  background-image: linear-gradient(180deg, rgba(40, 74, 194, 0.3098039216), transparent);
 }
 .content-contect-us .container-boxs .boxs-info {
   display: -ms-grid;
@@ -6037,6 +6039,10 @@ hr {
   max-width: 900px;
   margin: auto;
   margin-top: 30px;
+  -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1882352941);
+          box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1882352941);
+  padding: 15px;
+  border-radius: 8px;
 }
 .content-contect-us .form-contact-us .form .line {
   display: -webkit-box;
@@ -6786,9 +6792,6 @@ hr {
   font-weight: 600 !important;
 }
 
-.content-contect-us {
-  margin: 70px 0 0 120px;
-}
 .content-contect-us .form .line .input-form {
   text-align: left !important;
 }

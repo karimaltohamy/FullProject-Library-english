@@ -11,12 +11,13 @@ $blue-color: #284AC2;
 // start content contact us
 .content-contect-us {
     overflow: hidden;
-    margin: 70px 120px 0 0;
+    margin: 70px 0 0 110px;
     transition: all 0.3s ease;
 
     .container-boxs {
         padding: 20px 20px;
         text-align: center;
+        background-image: linear-gradient(180deg, #284ac24f, transparent);
 
         .boxs-info {
             display: grid;
@@ -94,6 +95,9 @@ $blue-color: #284AC2;
             max-width: 900px;
             margin: auto;
             margin-top: 30px;
+            box-shadow: 1px 5px 10px #00000030;
+            padding: 15px;
+            border-radius: 8px;
 
             .line {
                 display: flex;
