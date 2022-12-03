@@ -129,7 +129,7 @@ $blue-color: #284AC2;
 
             .box-book {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
                 gap: 20px;
 
                 .box {
@@ -157,7 +157,7 @@ $blue-color: #284AC2;
                         padding: 0 5px 15px 5px;
 
                         h3 {
-                            font-size: 16px;
+                            font-size: 15.px;
                             margin-top: 0;
                         }
 

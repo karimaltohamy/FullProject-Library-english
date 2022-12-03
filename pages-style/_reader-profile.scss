@@ -108,31 +108,27 @@ $blue-color: #284AC2;
 
         .reading {
             background-color: #FFF;
-            padding: 30px;
+            padding: 0px 20px;
             flex: 1;
             height: 700px;
             overflow: auto;
-            border: 1px solid #CCC;
 
             h2 {
-                margin-bottom: 50px;
+                margin-bottom: 15px;
             }
 
             .books {
                 display: grid;
                 gap: 20px;
-                grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
         
                 .card-book {
-                    padding: 25px 20px;
-                    box-shadow: 0 0 10px 0 #b6b6b6a9;
-                    display: block;
-                    color: $text-color;
-                    min-height: 385px;
-                    padding: 30px 10px 20px;
-                    text-align: center;
-                    position: relative;
+                    box-shadow: -1px 9px 15px 0 rgb(204 204 204 / 42%);
                     border-radius: 15px;
+                    overflow: hidden;
+                    color: #000;
+                    position: relative;
+                    padding-bottom: 15px;
         
                     .img-book {
                         display: flex;
@@ -141,21 +137,28 @@ $blue-color: #284AC2;
                         position: relative;
         
                         img:first-of-type {
-                            width: 200px ;
-                            height: 260px ;
+                            width: 100%;
+                            height: 215px;
                         }
                     }
             
                     p {
-                        margin-top: 5px;
-                        margin-bottom: 0;
-                        font-size: 17px;
+                        font-size: 15px;
                         font-weight: 600;
+                        margin-top: 0;
+                        padding: 0 5px;
                         text-align: center;
+                    }
+
+                    > span {
+                        text-align: center;
+                        display: block;
+                        padding: 0 5px;
                     }
             
                     >div {
                         margin-top: -12px;
+                        text-align: center;
         
                         span {
                             font-size: 15px;
@@ -164,8 +167,8 @@ $blue-color: #284AC2;
         
                     .mark-icon {
                         position: absolute;
-                        top: 35px;
-                        left: 25px;
+                        top: 15px;
+                        left: 13px;
         
                         img {
                             width: 42px;
@@ -198,6 +201,7 @@ $blue-color: #284AC2;
                 width: 100%;
                 height: auto;
                 border: none;
+                border-radius: 5px;
 
                 
                 .info-name-user {
