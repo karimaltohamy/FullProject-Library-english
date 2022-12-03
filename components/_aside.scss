@@ -137,12 +137,14 @@ $blue-color: #284AC2;
         .massage {
             top: -1px !important;
             right: -6px !important;
+            display: flex !important;
         }
 
 
 
         span {
             font-size: 10px;
+            display: block !important;
         }
     }
 }

@@ -13,10 +13,12 @@
 @use  "../pages-style/signup-login";
 @use "../pages-style/profile-details";
 @use "../pages-style/contact-us";
+@use "../pages-style/usage-agreement";
+@use "../pages-style/donate";
 
 
 .active-margin {
-    margin: 70px 0 0 85px !important;
+    margin: 70px 0 0 85px ;
 }
 
 /* Start Home Page */
@@ -495,3 +497,22 @@
     }
 }
 // end content-contect-us
+
+// start content-agreement
+.content-agreement {
+    // margin: 70px 0 0 110px ;
+
+    h2 {
+        &::after {
+            right: auto !important;
+            left: 0 !important;
+        }
+    }
+}
+// end content-agreement
+
+// start content-donate
+// .content-donate {
+//     // margin: 70px 0 0 110px ;
+// }
+// end content-donate

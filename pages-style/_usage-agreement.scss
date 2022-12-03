@@ -1,0 +1,113 @@
+$bg-color: #FFF;
+$text-color: #000;
+$blue-color: #284AC2;
+
+// start content-agreement
+.content-agreement {
+    overflow: hidden;
+    margin: 70px 0 0 110px;
+    transition: all 0.3s ease;
+    padding: 30px 0 0;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 23px;
+        position: relative;
+        margin-left: 30px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 2px;
+            background-color: $blue-color;
+        }
+    }
+
+    .box-content {
+        padding: 0 30px 30px;
+
+        .text {
+            background-color: #efefef;
+            padding: 20px;
+            border-radius: 8px;
+    
+            .question {
+                font-size: 18px;
+                display: block;
+            }
+    
+            .answer {
+                font-size: 16px;
+                color: #5a5a5a;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 25px;
+            }
+
+            h4  {
+                font-size: 22px;
+            }
+
+            .definitions-item {
+                font-size: 18px;
+                font-weight: 500;
+                
+                p {
+                    font-weight: 400;
+                    color: gray;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media(max-width: 650px) {
+    .content-agreement {
+        margin: 30px  0 0 !important;
+        padding: 0 15px !important;
+
+        h2 {
+            font-size: 16px !important;
+            margin-bottom: 15px !important;
+            margin-left: 0;
+        }
+
+        .box-content {
+            padding: 0 0 30px;
+            .text {
+                padding: 15px !important;
+    
+                .question {
+                    font-size: 15px;
+                }
+    
+                .answer {
+                    font-size: 11px !important;
+                }
+
+                h4 {
+                    font-size: 17px !important;
+                }
+
+                .definitions-item {
+                    font-size: 15px !important;
+
+                    p {
+                        font-size: 11px !important;
+                    }
+                }
+            }
+        }
+
+       
+    }
+}
+// end content-agreement
