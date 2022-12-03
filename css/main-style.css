@@ -3683,7 +3683,7 @@ hr {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 }
 .content-profile-1 .box-container .reading .books .card-book {
   -webkit-box-shadow: -1px 9px 15px 0 rgba(204, 204, 204, 0.42);
@@ -4056,7 +4056,7 @@ hr {
 }
 .content-profile-2 .box-container .reading {
   background-color: #FFF;
-  padding: 0 20px;
+  padding: 0px 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -4085,7 +4085,7 @@ hr {
 .content-profile-2 .box-container .reading .box-book {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   gap: 20px;
 }
 .content-profile-2 .box-container .reading .box-book .box {

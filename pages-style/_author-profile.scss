@@ -106,7 +106,7 @@ $blue-color: #284AC2;
 
         .reading {
             background-color: #FFF;
-            padding: 0 20px;
+            padding: 0px 20px;
             flex: 1;
             height: 700px;
             overflow: auto;
@@ -157,7 +157,7 @@ $blue-color: #284AC2;
                         padding: 0 5px 15px 5px;
 
                         h3 {
-                            font-size: 15.px;
+                            font-size: 15px;
                             margin-top: 0;
                         }
 
@@ -176,6 +176,7 @@ $blue-color: #284AC2;
                 }
             }
         }
+
 
         .reading::-webkit-scrollbar {
             width: 5px;
