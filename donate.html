@@ -213,14 +213,14 @@
                     <span>Support us by donating a small amount so we can cover the costs and keep going
 </span>
                     <div class="donate-numbers">
-                        <div class="number">5$</div>
-                        <div class="number">10$</div>
-                        <div class="number">20$</div>
-                        <div class="number">50$</div>
-                        <div class="number">100$</div>
-                        <div class="number">200$</div>
-                        <div class="number">500$</div>
-                        <div class="number">1000$</div>
+                        <div class="number number-donate">5$</div>
+                        <div class="number number-donate">10$</div>
+                        <div class="number number-donate">20$</div>
+                        <div class="number number-donate">50$</div>
+                        <div class="number number-donate">100$</div>
+                        <div class="number number-donate">200$</div>
+                        <div class="number number-donate">500$</div>
+                        <div class="number number-donate">1000$</div>
                     </div>
                     <button class="next-btn">Next</button>
                 </div>
@@ -257,5 +257,27 @@
         <!-- end content donate -->
 
     <script src="js/toggle.js"></script>
+    <script>
+            const numbersDonate = document.querySelectorAll(".number-donate")
+            const nextBtn = document.querySelector(".next-btn")
+
+            // start add active number in element
+            numbersDonate.forEach(item => {
+                item.addEventListener("click", (e) => {
+                    numbersDonate.forEach(itemRemove => itemRemove.classList.remove("active-number"))
+                    e.target.classList.add("active-number")
+                    nextBtn.classList.add("active-next")
+                })
+            }) 
+             // start add active number in element
+
+            nextBtn.addEventListener("click", (e) => {
+                if(e.target.classList.contains("active-next")) {
+                    console.log("next");
+                }else {
+                    alert("من فضلك اختار قيمه التبرع")
+                }
+            })
+    </script>
 </body>
 </html>

@@ -3395,7 +3395,7 @@ hr {
   .page-upload-3 {
     background-color: #FFF;
     overflow: hidden;
-    padding: 0 0 100px;
+    padding: 0;
   }
   .page-upload-3 .content-page-3 {
     width: 100% !important;
@@ -3433,7 +3433,10 @@ hr {
     font-size: 17px !important;
   }
   .content-page-3 {
-    padding: 0px 25px 35px 25px !important;
+    padding: 0px 10px 35px !important;
+  }
+  .content-page-3 .form {
+    padding: 0 !important;
   }
   .content-page-3 .form .input-text {
     margin-bottom: 10px !important;
@@ -6032,16 +6035,26 @@ hr {
   color: #ff7186;
   border-radius: 25px;
   font-weight: 500;
+  cursor: pointer;
+}
+.content-donate .boxs .box .donate-numbers .number.active-number {
+  color: white;
+  background-color: #ff7186;
 }
 .content-donate .boxs .box .next-btn {
   width: 100%;
   padding: 10px 5px;
-  background-color: #ff7186;
+  background-color: #a2a2a2;
   color: white;
   border-radius: 25px;
   font-weight: 500;
   border: none;
   font-size: 18px;
+  cursor: pointer;
+}
+.content-donate .boxs .box .next-btn.active-next {
+  background-color: #ff7186;
+  pointer-events: all;
 }
 
 @media (max-width: 650px) {
