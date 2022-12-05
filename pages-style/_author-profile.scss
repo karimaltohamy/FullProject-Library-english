@@ -165,7 +165,7 @@ $blue-color: #284AC2;
                             margin-bottom: 0;
                         }
 
-                        div:first-of-type {
+                        > div:first-of-type {
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -457,9 +457,9 @@ $blue-color: #284AC2;
                             color: gray;
                         }
 
-                        div {
+                        > div {
                             font-size: 12px !important;
-                            transform: translateY(-7px);
+                            transform: translateY(0px);
 
                             img {
                                 height: 12px;
